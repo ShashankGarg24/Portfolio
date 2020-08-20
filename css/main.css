@@ -47,6 +47,44 @@ body {
   display: flex;
 }
 
+#hero h1 {
+  display: block;
+  width: fit-content;
+  position: relative;
+  font-size: 4rem;
+  z-index: -1;
+  color: transparent;
+  animation: intro_text_after 1s ease forwards;
+  animation-delay: 1.8s;
+}
+
+#hero h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: black;
+  animation: intro_text_before 2s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes intro_text_before {
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
+}
+
+@keyframes intro_text_after {
+  100% {
+    color: black;
+  }
+}
 .fcard {
   background-color: transparent;
   width: 300px;
