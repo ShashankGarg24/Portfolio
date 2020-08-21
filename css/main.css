@@ -6,9 +6,9 @@ body {
   box-sizing: border-box;
 }
 
-body,
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -127,7 +127,7 @@ nav a:hover {
   }
 }
 
-.container1 {
+.container2 {
   display: flex;
   position: relative;
   z-index: -1;
@@ -142,12 +142,12 @@ nav a:hover {
 }
 
 .about {
-  width: 700px;
+  max-width: 400px;
   margin-left: 3vw;
   margin-right: 3vw;
 }
 
-.container1 .about h4 {
+.container2 .about h4 {
   background-color: black;
   color: white;
   width: 100%;
@@ -195,6 +195,41 @@ nav a:hover {
   background-color: black;
   color: white;
   transform: rotateY(180deg);
+}
+
+.slider {
+  width: 350px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.slider img {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  animation: slideshow 20s infinite;
+}
+
+@keyframes slideshow {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+.slider img:nth-child(4) {
+  animation-delay: 0s;
+}
+.slider img:nth-child(3) {
+  animation-delay: 5s;
+}
+.slider img:nth-child(2) {
+  animation-delay: 10s;
+}
+.slider img:nth-child(1) {
+  animation-delay: 15s;
 }
 
 .footer {
