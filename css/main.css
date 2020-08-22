@@ -189,16 +189,16 @@ nav li a:hover {
 }
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 320px;
   margin: 20px;
   margin-bottom: 60px;
   perspective: 1000px;
 }
 
 .flip-card-front img {
-  width: 300px;
- height: 300px;
+  width: 280px;
+ height: 320px;
 
 }
 
@@ -313,7 +313,7 @@ font-weight: 600;
 }
 .Github_icon {
   flex-direction: column;
-  background-color: rgba(119, 136, 153, 0.3);
+  background-color: rgba(99, 99, 99, 0.3);
   width: 150px;
   text-align: center;
   padding: 20px;
@@ -324,7 +324,7 @@ font-weight: 600;
 }
 
 .Github_icon:hover {
-  box-shadow: 0 8px 10px rgb(180, 180, 180);
+  box-shadow: 0 8px 10px rgb(177, 177, 177);
 }
 .footer {
   height: auto;
@@ -338,14 +338,13 @@ font-weight: 600;
 }
 
 .footer p:nth-child(1) {
-  font-size: 40px;
-  line-height: 5px;
+  font-size: 35px;
   text-align: center;
 }
 
 .footer p:nth-child(2) {
   font-size: 17px;
-  line-height: 1px;
+  margin-top: -20px;
   text-align: center;
 }
 
@@ -357,13 +356,33 @@ font-weight: 600;
 
 .social_media_icons ul li {
   font-size: 30px;
-  padding: 10px;
+  padding: 0 15px;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s;
+}
+
+.fa-facebook:hover {
+  transform: scale(1.5);
+  color: rgb(59,89,142);
+}
+.fa-instagram:hover {
+  transform: scale(1.5);
+  color: #F58529;
+}
+
+.fa-linkedin:hover {
+  transform: scale(1.5);
+  color: #0e76a8;
+}
+
+.fa-envelope:hover {
+  transform: scale(1.5);
+  color: #D44638;
 }
 
 #copyright {
-  font-size: 13px;
+  font-size: 10px;
   bottom: 20px;
 }
 
