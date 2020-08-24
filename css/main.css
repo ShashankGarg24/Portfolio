@@ -40,6 +40,7 @@ nav {
   background-color: black;
   position: fixed;
   top: 0;
+  z-index: 4;
   box-shadow: 10px 17px 10px rgba(0, 0, 0, 0.6);
   width: 100%;
 }
@@ -68,7 +69,7 @@ nav li a:hover {
     margin: 5px auto;
   }
   .container {
-    margin-top: 25%;
+    margin-top: 30%;
   }
 }
 /*navigation bar ends*/
@@ -113,7 +114,6 @@ nav li a:hover {
 
 .container {
   width: 100%;
-  top: 0;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -122,7 +122,7 @@ nav li a:hover {
 
 /*Introduction*/
 
-#intro h1 {
+#hero h1 {
   display: block;
   width: fit-content;
   position: relative;
@@ -133,14 +133,13 @@ nav li a:hover {
   animation-delay: 1.8s;
 }
 
-#intro h1 span {
+#hero h1 span {
   position: absolute;
-  top: 0;
   left: 0;
   height: 100%;
   width: 0;
   background-color: black;
-  animation: intro_text_before 2s ease forwards;
+  animation: intro_text_before 2s ease;
   animation-delay: 1s;
 }
 
@@ -181,19 +180,18 @@ nav li a:hover {
   margin-right: 3vw;
 }
 
-.container2 .about h1 {
+.container2 h1 {
   font-size: 3rem;
   font-weight: 600;
-  
 }
 
-.container2 .about h3 {
+.container2 h3 {
   font-size: 1.5rem;
   padding: 10px 0;
   font-weight: 600;
 }
 
-.container2 .about p {
+.container2 p {
   font-size: 17px;
   font-weight: 500;
 }
@@ -211,8 +209,7 @@ nav li a:hover {
 
 .card-front img {
   width: 280px;
- height: 320px;
-
+  height: 320px;
 }
 
 .card-in {
@@ -222,23 +219,19 @@ nav li a:hover {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 10px 15px 10px 0 rgba(0,0,0,0.5);
+  box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card:hover .card-in {
   transform: rotateY(180deg);
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-}
-
-.card-front {
-  background-color: #bbb;
-  color: black;
 }
 
 .card-back {
@@ -261,27 +254,34 @@ nav li a:hover {
 /*Skills*/
 
 #title {
-text-align: center;
-font-size: 3rem;
-font-weight: 600;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
-
-.java, .ml, .cp, .sql {
+.java,
+.ml,
+.cp,
+.sql {
   text-align: center;
-  padding: 10px  50px;
+  padding: 10px 50px;
   font-size: 17px;
   font-weight: 500;
 }
 
-.java img, .ml img, .cp img, .sql img {
+.java img,
+.ml img,
+.cp img,
+.sql img {
   transition: transform 0.4s;
 }
 
-.java img:hover, .ml img:hover, .cp img:hover, .sql img:hover {
-  transform: scale(1.5);
+.java img:hover,
+.ml img:hover,
+.cp img:hover,
+.sql img:hover {
+  transform: scale(1.7);
 }
-
 
 /*Animation slider*/
 .slider {
@@ -304,20 +304,20 @@ font-weight: 600;
   25% {
     opacity: 1;
   }
-  40% {
+  50% {
     opacity: 0;
   }
 }
-.slider img:nth-child(4) {
+.slider img:nth-child(1) {
   animation-delay: 0s;
 }
-.slider img:nth-child(3) {
+.slider img:nth-child(2) {
   animation-delay: 5s;
 }
-.slider img:nth-child(2) {
+.slider img:nth-child(3) {
   animation-delay: 10s;
 }
-.slider img:nth-child(1) {
+.slider img:nth-child(4) {
   animation-delay: 15s;
 }
 
@@ -387,11 +387,11 @@ font-weight: 600;
 
 .fa-facebook:hover {
   transform: scale(1.5);
-  color: rgb(59,89,142);
+  color: rgb(59, 89, 142);
 }
 .fa-instagram:hover {
   transform: scale(1.5);
-  color: #F58529;
+  color: #f58529;
 }
 
 .fa-linkedin:hover {
@@ -401,7 +401,7 @@ font-weight: 600;
 
 .fa-envelope:hover {
   transform: scale(1.5);
-  color: #D44638;
+  color: #d44638;
 }
 
 #copyright {
@@ -412,4 +412,3 @@ font-weight: 600;
 span {
   color: crimson;
 }
-7
